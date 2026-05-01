@@ -1291,3 +1291,130 @@ section{
         box-sizing: border-box;
     }
 }
+
+.footer{
+    background-color: #BEAE9A;
+    padding: 50px 5% 200px 5%;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    color: #fff;
+    height: 600px;
+}
+.footer a{
+    color: #fff;
+}
+.footer__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 350px;
+}
+.footer-list__item a{
+    font-size: 20px;
+}
+
+.footer__contacts{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    width: 350px;
+}
+.footer__contacts span {
+    display: flex;
+    gap: 10px;
+    height: 50px;
+    justify-content: center;
+}
+
+.footer__contacts  img{
+    width: 70%;
+    filter: brightness(0) invert(1);
+}
+.footer__contacts a, .footer__contacts p{
+        font-size: 21px;
+    font-weight: 300;
+}
+
+.footer__contacts span a {
+    background-color: #9C8B76;
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__info {
+    font-size: 21px;
+    font-weight: 300;
+    width: 350px;
+}
+
+.footer > img{
+    position: absolute;
+    bottom: 40px;
+    left: 38%;
+    width: 31%;
+    max-width: 450px;
+}
+
+
+@media (max-width: 1100px) {
+    .footer {
+        height: auto; 
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 40px;
+        padding: 60px 20px;
+    }
+
+    .footer img {
+        position: static; 
+        width: 60%;
+        margin-top: 30px;
+        order: 4; 
+    }
+
+    .footer__list, .footer__contacts, .footer__info {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-list__item a {
+        font-size: 18px;
+    }
+
+    .footer__contacts a, .footer__contacts p, .footer__info {
+        font-size: 16px;
+    }
+
+    .footer__contacts span {
+        margin-bottom: 10px;
+    }
+}
+
+
+.custom-alert {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 20px 30px;
+    background: #9C8B76; 
+    color: white;
+    border-radius: 4px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transform: translateY(150%);
+    transition: transform 0.4s ease;
+    z-index: 1000;
+    font-family: inherit;
+    letter-spacing: 1px;
+}
+
+.custom-alert.show {
+    transform: translateY(0);
+}
