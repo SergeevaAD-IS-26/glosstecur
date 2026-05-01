@@ -664,3 +664,124 @@ section{
     .text_slider { font-size: 18px; line-height: 1.4; }
     .slider { padding: 25px; border-radius: 25px; }
 }
+
+
+.problems{
+    margin-bottom: 100px;
+}
+
+.problems__content {
+    display: flex;
+    gap: 35px;
+}
+.problems__container{
+    width: 60%;
+}
+
+.problems__container > .title{
+    padding-top: 22px;
+    padding-left: 44px;
+    margin-bottom: 30px;
+}
+.problems__content img{
+    width: 100%;
+    border-radius: 34px;
+}
+.problems__list {
+    width: 40%;
+    background-color: #BEAE9A;
+    border-radius: 34px;
+    padding: 100px 60px 40px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.problems__item {
+    display: flex;
+    gap: 30px;
+}
+.problems__item .icon {
+    width: 45px;
+    height: 45px;
+    background-color: #9C8B76;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+}
+.problems__item .icon img{
+    width: 80%;
+    filter: brightness(0) invert(1);
+}
+.text_problems {
+    font-size: 28px;
+    font-weight: 300;
+    width: 90%;
+}
+
+@media (max-width: 1200px) {
+    .problems__container {
+        width: 50%;
+    }
+    .problems__list {
+        width: 50%;
+        padding: 60px 30px 40px 25px;
+    }
+    .text_problems {
+        font-size: 22px; 
+    }
+}
+
+@media (max-width: 1024px) {
+    .problems__content {
+        flex-direction: column; 
+        gap: 20px;
+    }
+
+    .problems__container {
+        width: 100%;
+    }
+
+    .problems__container > .title {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .problems__list {
+        width: 100%;
+        padding: 40px 25px;
+    }
+
+    .problems__item {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .problems {
+        margin-bottom: 60px;
+    }
+
+    .title_section {
+        font-size: 28px; 
+        line-height: 1.2;
+    }
+
+    .problems__container > .title {
+        margin-bottom: 20px;
+    }
+
+    .problems__item .icon {
+        width: 30px; 
+        height: 30px;
+        flex-shrink: 0; 
+    }
+
+    .text_problems {
+        font-size: 18px; 
+    }
+
+    .problems__list {
+        gap: 20px;
+        border-radius: 25px; 
+    }
+}
